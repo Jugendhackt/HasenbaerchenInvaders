@@ -1,0 +1,8 @@
+html {
+	background: #000;
+}
+#theGame {
+	width: 1000px;
+	height: 600px;
+	border: 1px solid #888;
+}
