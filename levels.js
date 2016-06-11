@@ -69,7 +69,7 @@ function generateLevel(num) {
             enemy.setPosition(startX + i*deltaX, startY - 4*enemy.lineHeight);
             drawElements.push(enemy);
         }
-    } else if(num === 0) {
+    } else if(num === 5) {
         var startY = -50;
         var startX = 100;
         for (var i = 0; i < 20; i++) {
