@@ -71,14 +71,23 @@ function generateLevel(num) {
         }
     } else if(num === 5) {
         var startY = -50;
-        var startX = 100;
+        var startX = 50;
+        var startX2 = 150;
         for (var i = 0; i < 20; i++) {
             enemy = Object.create(SINUS_ENEMY);
             enemy.delay = 20*i;
-            enemy.speed = 0.9;
+            enemy.speed = 0.4;
             enemy.oszillationSpeed = 0.06;
             enemy.oszillationDistance = 1;
             enemy.setPosition(startX, startY);
+            drawElements.push(enemy);
+            
+            enemy = Object.create(SINUS_ENEMY);
+            enemy.delay = 20*i;
+            enemy.speed = 0.4;
+            enemy.oszillationSpeed = 0.06;
+            enemy.oszillationDistance = 1;
+            enemy.setPosition(startX2, startY);
             drawElements.push(enemy);
         }
     } else {

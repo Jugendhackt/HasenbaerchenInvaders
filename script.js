@@ -174,7 +174,7 @@ RECT_ENEMY.tick = function() {
 var SINUS_ENEMY = Object.create(ENEMY);
 SINUS_ENEMY.posXMax = 200;
 SINUS_ENEMY.posXMin = 10;
-SINUS_ENEMY.oszillationStep = 0;
+SINUS_ENEMY.oszillationStep = 1;
 SINUS_ENEMY.oszillationSpeed = 1;
 SINUS_ENEMY.tick = function() {
     this.oszillationStep++;
